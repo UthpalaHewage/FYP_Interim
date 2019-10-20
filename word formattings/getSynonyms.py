@@ -7,18 +7,20 @@ from nltk.corpus import wordnet
 syn = wordnet.synsets("can")
 print(syn[0].definition())
 print(syn[0].examples())
+print("-------------------------")
 
 # ------------synonyms words-------------
-# synonyms = []
-# for syn in wordnet.synsets('talk'):
-#     for lemma in syn.lemmas():
-#         synonyms.append(lemma.name())
-# print(synonyms)
+synonyms = []
+for syn in wordnet.synsets('talk'):
+    for lemma in syn.lemmas():
+        synonyms.append(lemma.name())
+print(synonyms)
+print("-------------------------")
 
 # -----------antonyms words--------------
-# antonyms = []
-# for syn in wordnet.synsets("large"):
-#     for l in syn.lemmas():
-#         if l.antonyms():
-#             antonyms.append(l.antonyms()[0].name())
-# print(antonyms)
+antonyms = []
+for syn in wordnet.synsets("large"):
+    for l in syn.lemmas():
+        if l.antonyms():
+            antonyms.append(l.antonyms()[0].name())
+print(antonyms)

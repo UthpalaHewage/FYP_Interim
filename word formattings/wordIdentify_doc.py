@@ -6,10 +6,9 @@ nlp = spacy.load('en_core_web_sm')
 
 # Create a simple Doc object
 # doc = nlp(u"The quick brown fox jumped over the lazy dog's back.")
-#doc = nlp(u"I am Uthpala Hewage. We are undergraduates of faculty of Information of Technology.")
+#doc = nlp(u"We are team Aztec. The undergraduates of faculty of Information of Technology.")
 
 # load a text file
-
 with open('sample.txt', 'r') as file:
 
     data = file.read().replace('\n', ' ')
